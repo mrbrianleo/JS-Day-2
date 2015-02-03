@@ -9,7 +9,7 @@
 // Should always return the value 5
 
 function giveMeFive() {
-
+  return 5;
 }
 
 //---------
