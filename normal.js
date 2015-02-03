@@ -19,8 +19,8 @@ function giveMeFive() {
 // and return the exact same thing. This type
 // of function is called a no-op as in (no operation)
 
-function noOp() {
-
+function noOp(name) {
+  return (name);
 }
 
 //---------
@@ -31,8 +31,8 @@ function noOp() {
 // it should return a number twice the size as the number
 // that is passed in.
 
-function double() {
-
+function double(x) {
+  return x + x;
 }
 
 //---------
