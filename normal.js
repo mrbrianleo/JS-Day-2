@@ -42,8 +42,8 @@ function double(x) {
 // It should return the number squared. Squared meaning
 // it should return the number multiplied by itself.
 
-function square() {
-
+function square(x) {
+  return x * x;
 }
 
 //---------
