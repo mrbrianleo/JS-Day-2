@@ -54,13 +54,13 @@ function square(x) {
 // of all the numbers in the array added together)
 // and return it.
 
-function sum(numbers) {
-  var answer = 0;
-  for ( i = 0; i < numbers.length; i++) {
-    var numberAtIndex = numbers[i];
-    answer +=numberAtIndex;
+// I rebuilt the function after our lesson today (Wed)
+function sum(myArray) {
+  var total = 0;
+  for (var index = 0; index < myArray.length; index++) {
+    total += myArray[index];
   }
-  return answer;
+  return total;
 }
 
 //---------
@@ -74,9 +74,15 @@ function sum(numbers) {
 
 // HINT: use an array and a for loop
 
-function letterIndex() {
 
+function letterIndex(letter) {
+  var n = "abcdefghijklmnopqrstuvwxyz".split("");
+  for (var i = 0; i < 26; i++); {
+    console.log(alphabet);
+  }
 }
+
+
 
 //---------
 
@@ -92,8 +98,9 @@ function letterIndex() {
 
 // HINT: use an array and the modulo (%) operator
 
-function reverseLetterIndex() {
-
+function reverseLetterIndex(number) {
+  var letters = "abcdefghijklmnopqrstuvwxyz".split("");
+  return letters[number % letters.length];
 }
 
 //---------
