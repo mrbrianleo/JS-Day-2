@@ -54,8 +54,13 @@ function square(x) {
 // of all the numbers in the array added together)
 // and return it.
 
-function sum() {
-
+function sum(numbers) {
+  var answer = 0;
+  for ( i = 0; i < numbers.length; i++) {
+    var numberAtIndex = numbers[i];
+    answer +=numberAtIndex;
+  }
+  return answer;
 }
 
 //---------
