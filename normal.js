@@ -197,7 +197,7 @@ function rot13(string) {
   // output
   // "g"
 
-  // need to goin newIndexToNewLetter0, 1, 2, 3, 4
+  // need to join newIndexToNewLetter0, 1, 2, 3, 4
   // ^^^ stuck on how to do this
   // then re execute teh same code above for the 2nd index word and 3rd index word
   // then join the 1st, 2nd and 3rd indexed words together to crreate the new sentence
