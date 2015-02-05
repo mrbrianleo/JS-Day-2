@@ -141,6 +141,88 @@ function reverseLetterIndex(number) {
 
 // HINT: use the previous 2 functions
 
-function rot13() {
+function rot13(string) {
+  var stringSplitIntoWords = string.split(" ");
+  console.log(stringSplitIntoWords);
+  // output 
+  // ["What", "the", "func"]
 
+  // need to grab first word in array
+  stringSplitIntoWords[0];
+  // output
+  // "What"
+
+  // need to split word into letters
+  var wordsSplitIntoLetters = stringSplitIntoWords[0].split("");
+  // output
+  // ["W", "h", "a", "t"]
+
+  // need to change 1st letter into new ciphered index // use funtion previously created
+  var letterToNewLetterIndex0 = letterIndex(wordsSplitIntoLetters[0])+ 13;
+  // output
+  // 35
+
+  // need to change 2nd letter into new ciphered index // use funtion previously created
+  var letterToNewLetterIndex1 = letterIndex(wordsSplitIntoLetters[1])+ 13;
+  // output
+  // 20
+
+  // need to change 3rd letter into new ciphered index // use funtion previously created
+  var letterToNewLetterIndex2 = letterIndex(wordsSplitIntoLetters[2])+ 13;
+  // output
+  // 13
+
+  // need to change 4th letter into new ciphered index // use funtion previously created
+  var letterToNewLetterIndex3 = letterIndex(wordsSplitIntoLetters[3])+ 13;
+  // output
+  // 32
+
+  //convert 1st index number to new letter // use function previously created
+  var newIndexToNewLetter0 = reverseLetterIndex(letterToNewLetterIndex0)
+  // output
+  // "j"
+
+  //convert 2nd index number to new letter // use function previously created
+  var newIndexToNewLetter1 = reverseLetterIndex(letterToNewLetterIndex1)
+  // output
+  // "u"
+
+  //convert 3rd index number to new letter // use function previously created
+  var newIndexToNewLetter2 = reverseLetterIndex(letterToNewLetterIndex2)
+  // output
+  // "n"
+
+  //convert 4th index number to new letter // use function previously created
+  var newIndexToNewLetter3 = reverseLetterIndex(letterToNewLetterIndex3)
+  // output
+  // "g"
+
+  // need to goin newIndexToNewLetter0, 1, 2, 3, 4
+  // ^^^ stuck on how to do this
+  // then re execute teh same code above for the 2nd index word and 3rd index word
+  // then join the 1st, 2nd and 3rd indexed words together to crreate the new sentence
+  // this is way overkill but at this point in the day, i'm not sure i have the brain power to simplify
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
